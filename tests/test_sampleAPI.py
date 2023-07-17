@@ -8,4 +8,4 @@ class TestSampleAPI():
     json = '카카오'
     response = requests.get(self.ENDPOINT + f'/{json}')
 
-    assert  response.status_code == 300
+    assert  response.status_code == 200
