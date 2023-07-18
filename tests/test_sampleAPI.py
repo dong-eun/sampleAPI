@@ -5,7 +5,7 @@ import requests
 class TestSampleAPI():
 
   def test_poi_search(self):
-    json = '카카오'
-    response = requests.get(self.ENDPOINT + f'/{json}')
+    search = '카카오'
+    response = requests.get(self.ENDPOINT + f'/{search}')
 
     assert  response.status_code == 200
