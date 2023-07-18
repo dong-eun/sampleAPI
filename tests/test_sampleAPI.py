@@ -1,8 +1,8 @@
-import pytest
 import requests
+from utility.commonFunction import CommonFuntion
 
-@pytest.mark.usefixtures('setup')
-class TestSampleAPI():
+
+class TestSampleAPI(CommonFuntion):
 
   def test_poi_search(self):
     search = '카카오'
